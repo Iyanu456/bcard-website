@@ -43,9 +43,13 @@ export default function LandingPage() {
                    
                 </section>
 
-                <section className="grid p-5 mt-[5em]">
-                    <div className="relative grid place-items-center  p-4 rounded-lg shadow-lg gradient-bg w-[300px] h-[400px]">
-                        <h3 className="text-[1.5em] leading-7 text-center">The <span className="text-[#FF5810]">community</span> owned card</h3>
+                <section className="grid grid-cols-[1fr,1fr,1fr] h-[max-content] p-5 mt-[5em]">
+                    <div className="relative flex flex-col  p-4 rounded-lg shadow-lg gradient-bg w-[100%] h-[fit-content]">
+                        <div className="max-w-[100%] max-h-[70%]">  <Image src={"/images/card 1.png"} className="w-[110%] cover" height={1} width={1} alt="nlnjlnl"/></div>
+                   
+                        <h3 className="text-[1.5em] leading-7 text-center">The <span className="text-[#FF5810]">community</span> owned card!</h3>
+                        <p>Your Defy Card is by DAOs, for DAOs. Unlike centralized crypto cards, you have a say in how we build the future.</p>
+
   
                     </div>
                 </section>
