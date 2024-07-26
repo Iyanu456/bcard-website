@@ -262,11 +262,28 @@ export default function LandingPage() {
                     alt=""
                   />
                   <h3 className="text-[1.4em] mt-4 font-semibold leading-8">Support your community</h3>
-                  <p className="text-[0.95em] mt-2 max-w-[80%] mx-auto">User’s community enjoys increased economic stability and health</p>
+                  <p className="text-[0.95em] mt-2 max-w-[80%] mx-auto">{`User’s community enjoys increased economic stability and health`}</p>
                 </div>
               </div>
           </div>
           
+        </section>
+        <section className="hidden md:grid place-items-center mt-[8em]">
+          <div className="grid relative w-[100%]">
+          <div className="absolute">
+            <Image
+                src={"/images/curve 5.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+            </div>
+            <div className="grid place-items-center text-center w-[90%] mx-auto pt-[7em] z-40">
+              <h2 className="text-[2.7em] mb-5 max-w-[50%] font-semibold leading-[1.3em]">Give your community a {<br></br>}way to support your{<br></br>} cause  </h2>
+              <p className="md:max-w-[42%]">BCard works for every community, no matter how big or small, whether or not you have a token. </p>
+            </div>
+          </div>
         </section>
       </div>
     </>
