@@ -332,7 +332,7 @@ export default function LandingPage() {
         </section>
 
 
-        <section className="grid place-items-center mt-[5em] md:mt-[25em]">
+        <section className="grid place-items-center mt-[3.5em] md:mt-[25em]">
           <h3 className="mb-[1.5em] text-[2.4em]">Meet the team</h3>
           <div className="grid relative place-items-center w-screen">
             <div className="absolute">
@@ -344,7 +344,7 @@ export default function LandingPage() {
                 alt=""
               />
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-[1fr,1fr,1fr] place-items-center z-50 gap-[4em] mx-auto w-[80%]">
+            <div className="flex flex-col md:grid md:grid-cols-[1fr,1fr,1fr] place-items-center z-50 gap-[4em] mx-auto w-[90%] md:w-[80%]">
               <Image
                 src={"/images/bacard uiser 2.png"}
                 className="w-[100%]"
@@ -374,8 +374,8 @@ export default function LandingPage() {
         </section>
 
 
-        <section className="grid place-items-center mt-[6em]">
-          <h3>OUR PARTNERS</h3>
+        <section className="grid place-items-center mt-[6em] mb-[5em]">
+          <h3 className="tracking-[0.7em]">OUR PARTNERS</h3>
           <div className="mt-[4em] flex max-sm:flex-col gap-[4em] max-sm:justify-center justify-between center-align w-[50%]">
           <Image
                 src={"/images/image 15.svg"}
@@ -401,6 +401,81 @@ export default function LandingPage() {
               />
           </div>
         </section>
+
+        <section className="hidden md:grid place-items-center mt-[10em]">
+          <h3 className="mb-[1.5em] text-[2em] font-semibold">FAQ</h3>
+          <p className="px-3 py-5 border border-white mt-1">
+          Dive into our FAQs for all you need to know about navigating the world with BCard</p>
+          <div className="mt-[3em] border border-white w-[70%] h-[26em]"></div>
+        </section>
+
+
+
+        <section className="grid place-items-center  mt-[10em] mb-[5em]">
+        <h3 className="mb-[1.5em] text-[1.8em] font-semibold text-center leading-[2em]">Ready to get started?{<br></br>}Contact us.</h3>
+          <div className="flex flex-col gap-4 w-[65%] justify-center center-align">
+            <div className="flex max-sm:flex-col max-sm:w-[200%] gap-4 w-[100%]">
+            <input 
+            type="text"  
+            placeholder="Name" 
+            className="bg-[#1C1C1C] text-white placeholder-gray-400 rounded-lg border border-gray-600 p-2 pl-4 w-[50%]"
+        />
+        <input 
+            type="text" 
+            placeholder="TheDaoist@protonmail.com" 
+            className="bg-[#1C1C1C] text-white placeholder-gray-400 rounded-lg border border-gray-600 p-2 pl-4 w-[50%]"
+        />
+            </div>
+            <div className="flex max-sm:flex-col max-sm:w-[200%] gap-4 w-[100%]">
+            <input 
+            type="text" 
+            placeholder="Discord Handle" 
+            className="bg-[#1C1C1C] text-white placeholder-gray-400 rounded-lg border border-gray-600 p-2 pl-4 w-[50%]"
+        />
+        <input 
+            type="text" 
+            placeholder="Organization" 
+            className="bg-[#1C1C1C] text-white placeholder-gray-400 rounded-lg border border-gray-600 p-2 pl-4 w-[50%]"
+        />
+            </div>
+            <div>
+            <textarea 
+            placeholder="Write a message for us!" 
+            className="bg-[#1C1C1C] text-white placeholder-gray-400 rounded-lg border border-gray-600 p-2 pl-4 w-[100%] h-60"
+        ></textarea>
+            </div>
+          </div>
+          <button className="mx-auto mt-[2em] rounded-md bg-[#FF005C] px-[2.6em] py-[0.7em]">
+                    {" "}
+                    Contact us
+                  </button>
+        </section>
+
+        <section>
+        <Image
+                src={"/images/Frame 10.svg"}
+                className="w-[100%] mt-[8em] max-sm:hidden max-sm:mb-[5em]"
+                height={1}
+                width={1}
+                alt=""
+              />
+        </section>
+
+    
+    <section className="max-sm:hidden">
+    <Image
+              src={"/images/logo-dark.svg"}
+              height={1}
+              width={1}
+              className="w-[10%] ml-5 mt-[15em] mb-[2em]"
+              alt="logo"
+            />
+  
+        <hr className="mb-[14em] bg-grey border-[grey] border"></hr>
+    </section>
+ 
+          
+   
       </div>
     </>
   );
