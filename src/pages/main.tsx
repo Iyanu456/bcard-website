@@ -413,7 +413,7 @@ export default function LandingPage() {
 
         <section className="grid place-items-center  mt-[10em] mb-[5em]">
         <h3 className="mb-[1.5em] text-[1.8em] font-semibold text-center leading-[2em]">Ready to get started?{<br></br>}Contact us.</h3>
-          <div className="flex flex-col gap-4 w-[65%] justify-center center-align">
+          <div className="flex flex-col gap-4 w-[90%] md:w-[65%] justify-center center-align">
             <div className="flex max-sm:flex-col max-sm:w-[200%] gap-4 w-[100%]">
             <input 
             type="text"  
