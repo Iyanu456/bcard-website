@@ -20,7 +20,7 @@ export default function LandingPage() {
   return (
     <>
       <div className="">
-        <header className="mx-[1em] mt-[1em] mb-[2em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
+        <header className="mx-[1em] mb-[2em] mt-[1em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
           <div className="flex px-[1em] py-[1.2em] md:px-[25]">
             <Image
               src={"/images/logo-dark.svg"}
@@ -161,38 +161,112 @@ export default function LandingPage() {
         </section>
 
         <section className="mb-[6em] mt-[8em] grid w-screen place-items-center">
-          <div className="flex flex-col gap-1 gradient-bg-table px-2 md:px-5 pb-5 rounded-2xl">
-            <div className="grid h-[75px] w-[86vw] md:w-[73vw] md:grid-cols-[120px,1fr,1fr,1fr,1fr] grid-cols-[0fr,1fr,1fr,1fr,1fr] gap-3 text-center">
+          <div className="gradient-bg-table flex flex-col gap-1 rounded-2xl px-2 pb-5 md:px-5">
+            <div className="grid h-[75px] w-[86vw] grid-cols-[0fr,1fr,1fr,1fr,1fr] gap-3 text-center md:w-[73vw] md:grid-cols-[120px,1fr,1fr,1fr,1fr]">
               <div className="h-[100%] w-[100%] "></div>
-              <div className="h-[100%] w-[100%] text-[1em] md:text-[1.25em] font-semibold">BCard</div>
-              <div className="h-[100%] w-[100%] text-[0.82em] md:text-[1em] font-semibold">Borderless banking cards</div>
-              <div className="h-[100%] w-[100%] text-[0.82em] md:text-[1em] font-semibold">Crypto reward cards</div>
-              <div className="h-[100%] w-[100%] text-[0.82em] md:text-[1em] font-semibold">Crypto spend cards</div>
+              <div className="h-[100%] w-[100%] text-[1em] font-semibold md:text-[1.25em]">
+                BCard
+              </div>
+              <div className="h-[100%] w-[100%] text-[0.82em] font-semibold md:text-[1em]">
+                Borderless banking cards
+              </div>
+              <div className="h-[100%] w-[100%] text-[0.82em] font-semibold md:text-[1em]">
+                Crypto reward cards
+              </div>
+              <div className="h-[100%] w-[100%] text-[0.82em] font-semibold md:text-[1em]">
+                Crypto spend cards
+              </div>
             </div>
             {comparisonData.map((item, value) => (
               <>
-                <div className="flex flex-col md:grid text-center h-[fit-content] md:h-[70px] w-[100%] md:grid-cols-[120px,auto] gap-3">
-                <hr className="md:hidden block bg-[grey] border-[grey]"></hr>
-                  <div className="h-[100%] w-[100%] font-semibold max-sm:text-[0.7] text-left md:text-center pl-5 text-[0.96em]">{item.name}</div>
-                  <hr className="md:hidden block bg-[grey] border-[grey]"></hr>
-                  <div className="grid h-[100%] w-[100%] grid-cols-[1fr,1fr,1fr,1fr] gap-3 mb-[1em]">
-                    <div className="h-[100%] w-[100%]">{item.fields[0] ? 
+                <div className="flex h-[fit-content] w-[100%] flex-col gap-3 text-center md:grid md:h-[70px] md:grid-cols-[120px,auto]">
+                  <hr className="block border-[grey] bg-[grey] md:hidden"></hr>
+                  <div className="h-[100%] w-[100%] pl-5 text-left text-[0.96em] font-semibold max-sm:text-[0.7] md:text-center">
+                    {item.name}
+                  </div>
+                  <hr className="block border-[grey] bg-[grey] md:hidden"></hr>
+                  <div className="mb-[1em] grid h-[100%] w-[100%] grid-cols-[1fr,1fr,1fr,1fr] gap-3">
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[0] ? (
                         <Image
-                            src={"/images/green-tick.png"}
-                            className="cover mx-auto min-w-[50px] mt-0"
-                            height={1}
-                            width={1}
-                            alt="image"
-                        /> : "no"}
+                          src={"/images/green-tick.png"}
+                          className="cover mx-auto mt-0 min-w-[50px]"
+                          height={1}
+                          width={1}
+                          alt="image"
+                        />
+                      ) : (
+                        null
+                      )}
                     </div>
-                    <div className="h-[100%] w-[100%]">{item.fields[1] ? "yes" : null}</div>
-                    <div className="h-[100%] w-[100%]">{item.fields[2] ? "yes" : null}</div>
-                    <div className="h-[100%] w-[100%]">{item.fields[3] ? "yes" : null}</div>
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[1] ? "yes" : null}
+                    </div>
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[2] ? "yes" : null}
+                    </div>
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[3] ? "yes" : null}
+                    </div>
                   </div>
                 </div>
               </>
             ))}
           </div>
+        </section>
+        <section className="flex w-screen mb-[5em] max-sm:mt-[10em]">
+          <div className="grid relative w-[100%]">
+            <div className="absolute">
+            <Image
+                src={"/images/curve 4.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+            </div>
+            
+
+              <div className="flex flex-col md:grid md:grid-cols-[1fr,1fr,1fr] gap-[7em] md:gap-5 mx-auto z-40 w-[90%]">
+                <div className=" flex flex-col center-align justify-center md:mt-[5em] text-center">
+                  <Image
+                    src={"/images/android-phone.svg"}
+                    className="w-[34%] mx-auto"
+                    height={1}
+                    width={1}
+                    alt=""
+                  />
+                  <h3 className="text-[1.4em] mt-4 font-semibold leading-8">Download the App</h3>
+                  <p className="text-[0.95em] mt-2 max-w-[80%] mx-auto">Get a physical/virtual card, choose a community</p>
+                </div>
+
+                <div className=" flex flex-col center-align justify-center md:mt-[-5em] text-center">
+                  <Image
+                    src={"/images/credit-card-bubbles.svg"}
+                    className="w-[66%] mx-auto"
+                    height={1}
+                    width={1}
+                    alt=""
+                  />
+                  <h3 className="text-[1.4em]  font-semibold leading-8 max-w-[85%] mx-auto">Make purchases, get token rewards
+                  </h3>
+                  <p className="text-[0.95em] mt-2 max-w-[80%] mx-auto">50% of net interchange goes to chosen community</p>
+                </div>
+
+                <div className=" flex flex-col center-align justify-center text-center md:mt-[4em]">
+                  <Image
+                    src={"/images/Union.svg"}
+                    className="w-[50%] mx-auto"
+                    height={1}
+                    width={1}
+                    alt=""
+                  />
+                  <h3 className="text-[1.4em] mt-4 font-semibold leading-8">Support your community</h3>
+                  <p className="text-[0.95em] mt-2 max-w-[80%] mx-auto">User’s community enjoys increased economic stability and health</p>
+                </div>
+              </div>
+          </div>
+          
         </section>
       </div>
     </>
