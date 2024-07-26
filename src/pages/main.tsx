@@ -20,7 +20,7 @@ export default function LandingPage() {
   return (
     <>
       <div className="">
-        <header className="mx-[1em] my-[2em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
+        <header className="mx-[1em] mt-[1em] mb-[2em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
           <div className="flex px-[1em] py-[1.2em] md:px-[25]">
             <Image
               src={"/images/logo-dark.svg"}
