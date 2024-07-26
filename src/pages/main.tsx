@@ -161,19 +161,21 @@ export default function LandingPage() {
         </section>
 
         <section className="mb-[6em] mt-[8em] grid w-screen place-items-center">
-          <div className="flex flex-col gap-1 gradient-bg-table md:px-5 max-sm:pb-5 rounded-2xl">
-            <div className="grid h-[75px] w-[86vw] md:w-[73vw] grid-cols-[120px,1fr,1fr,1fr,1fr] gap-3 text-center">
+          <div className="flex flex-col gap-1 gradient-bg-table px-2 md:px-5 pb-5 rounded-2xl">
+            <div className="grid h-[75px] w-[86vw] md:w-[73vw] md:grid-cols-[120px,1fr,1fr,1fr,1fr] grid-cols-[0fr,1fr,1fr,1fr,1fr] gap-3 text-center">
               <div className="h-[100%] w-[100%] "></div>
               <div className="h-[100%] w-[100%] text-[1em] md:text-[1.25em] font-semibold">BCard</div>
-              <div className="h-[100%] w-[100%] text-[0.85em] md:text-[1em] font-semibold">Borderless banking cards</div>
-              <div className="h-[100%] w-[100%] text-[0.85em] md:text-[1em] font-semibold">Crypto reward cards</div>
-              <div className="h-[100%] w-[100%] text-[0.85em] md:text-[1em] font-semibold">Crypto spend cards</div>
+              <div className="h-[100%] w-[100%] text-[0.82em] md:text-[1em] font-semibold">Borderless banking cards</div>
+              <div className="h-[100%] w-[100%] text-[0.82em] md:text-[1em] font-semibold">Crypto reward cards</div>
+              <div className="h-[100%] w-[100%] text-[0.82em] md:text-[1em] font-semibold">Crypto spend cards</div>
             </div>
             {comparisonData.map((item, value) => (
               <>
-                <div className="grid text-center h-[70px] w-[73vw] grid-cols-[120px,auto] gap-3">
-                  <div className="h-[100%] w-[100%] font-semibold max-sm:text-[0.7] text-[0.96em]">{item.name}</div>
-                  <div className="grid h-[100%] w-[100%] grid-cols-[1fr,1fr,1fr,1fr] gap-3">
+                <div className="flex flex-col md:grid text-center h-[fit-content] md:h-[70px] w-[100%] md:grid-cols-[120px,auto] gap-3">
+                <hr className="md:hidden block bg-[grey] border-[grey]"></hr>
+                  <div className="h-[100%] w-[100%] font-semibold max-sm:text-[0.7] text-left md:text-center pl-5 text-[0.96em]">{item.name}</div>
+                  <hr className="md:hidden block bg-[grey] border-[grey]"></hr>
+                  <div className="grid h-[100%] w-[100%] grid-cols-[1fr,1fr,1fr,1fr] gap-3 mb-[1em]">
                     <div className="h-[100%] w-[100%]">{item.fields[0] ? 
                         <Image
                             src={"/images/green-tick.png"}
