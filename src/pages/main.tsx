@@ -330,6 +330,77 @@ export default function LandingPage() {
            
           </div>
         </section>
+
+
+        <section className="grid place-items-center mt-[5em] md:mt-[25em]">
+          <h3 className="mb-[1.5em] text-[2.4em]">Meet the team</h3>
+          <div className="grid relative place-items-center w-screen">
+            <div className="absolute">
+              <Image
+                src={"/images/curve 6.svg"}
+                className="w-[100%] mt-[-8em]"
+                height={1}
+                width={1}
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col md:grid md:grid-cols-[1fr,1fr,1fr] place-items-center z-50 gap-[4em] mx-auto w-[80%]">
+              <Image
+                src={"/images/bacard uiser 2.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+              <Image
+                src={"/images/bcard user 3.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+              <Image
+                src={"/images/bcard user 1 (1).png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+              
+              </div>
+              
+          </div>
+          <button className="z-50 mx-auto mt-5 bg-[black] rounded-md border border-white px-[2.6em] py-[0.7em]">Meet all of us</button>
+        </section>
+
+
+        <section className="grid place-items-center mt-[6em]">
+          <h3>OUR PARTNERS</h3>
+          <div className="mt-[4em] flex max-sm:flex-col gap-[4em] max-sm:justify-center justify-between center-align w-[50%]">
+          <Image
+                src={"/images/image 15.svg"}
+                className="w-[6em] mx-auto"
+                height={1}
+                width={1}
+                alt=""
+              />
+            <Image
+                src={"/images/DAO Logo.svg"}
+                className="w-[6em] mx-auto"
+                height={1}
+                width={1}
+                alt=""
+              />
+              
+              <Image
+                src={"/images/image 16.svg"}
+                className="w-[6em] mx-auto"
+                height={1}
+                width={1}
+                alt=""
+              />
+          </div>
+        </section>
       </div>
     </>
   );
