@@ -269,7 +269,7 @@ export default function LandingPage() {
           
         </section>
         <section className="hidden md:grid place-items-center mt-[8em]">
-          <div className="grid relative w-[100%]">
+          <div className="grid relative w-[110%]">
           <div className="absolute">
             <Image
                 src={"/images/curve 5.png"}
@@ -279,10 +279,55 @@ export default function LandingPage() {
                 alt=""
               />
             </div>
-            <div className="grid place-items-center text-center w-[90%] mx-auto pt-[7em] z-40">
-              <h2 className="text-[2.7em] mb-5 max-w-[50%] font-semibold leading-[1.3em]">Give your community a {<br></br>}way to support your{<br></br>} cause  </h2>
-              <p className="md:max-w-[42%]">BCard works for every community, no matter how big or small, whether or not you have a token. </p>
+            <div className="grid place-items-center text-center w-[90%] mx-auto pt-[8em] z-40">
+              <h2 className="text-[2.7em] mb-5 max-w-[50%] font-semibold leading-[1.3em]">Give your community a way to support your cause  </h2>
+              <p className="md:max-w-[35%]">BCard works for every community, no matter how big or small, whether or not you have a token. </p>
             </div>
+          </div>
+        </section>
+
+
+        <section className="relative mb-[15em] z-50">
+          <div className="flex flex-col-reverse max-sm:w-[92%] w-[90%] md:grid md:place-items-center md:grid-cols-[1fr,1fr] h-[fit-content] mx-auto md:h-[5em] mt-[2em] md:mx-auto w-[70%] gap-[5em] md:gap-[6em]">
+            <div className="p-5 shadow-md gradient-bg-blue-purple rounded-xl h-[100%] w-[100%]">
+              <div className="flex flex-col-reverse md:grid md:grid-cols-[70%,30%] pt-4 gap-2">
+                <h2 className="text-[1.6em] md:text-[1.4em] max-sm:mt-[-1.8em] md:px-4 font-semibold leading-8">{`Bcard powers your community’s `}{<span className="text-[#08BFFF]">economic</span>} engine</h2>
+                <div>
+                  <Image
+                src={"/images/image 22.svg"}
+                className="w-[50%] max-sm:h-[10%] max-sm:mt-[-3.6em] md:w-[90%] max-sm:mx-auto max-sm:rotate-90 mix-blend-screen"
+                height={1}
+                width={1}
+                alt=""
+              /></div>
+              </div>
+              <p className="hidden md:block text-center mt-4 leading-6">Using BCard, each member of your community creates recurring revenue with their existing everyday spending</p>
+            </div>
+
+
+            <div className="p-5 shadow-md gradient-bg-green-purple rounded-xl h-[100%] w-[100%]">
+              <div className="flex flex-col-reverse md:grid md:grid-cols-[70%,30%] pt-4 gap-2">
+                <h2 className="text-[1.6em] max-sm:mt-5 md:text-[1.4em] md:px-4 font-semibold leading-8"><span className="text-[#14FF00]">Fuelling</span> projects and aspirations with every swipe</h2>
+                <div className="max-sm:flex max-sm:gap-[1.5em] max-sm:justify-center">
+                  <Image
+                    src={"/images/arrow.svg"}
+                    className="max-sm:w-[20%] md:w-[80%] mix-blend-screen"
+                    height={1}
+                    width={1}
+                    alt=""
+                  />
+                   <Image
+                    src={"/images/arrow.svg"}
+                    className="block md:hidden w-[20%] mix-blend-screen"
+                    height={1}
+                    width={1}
+                    alt=""
+                  />
+              </div>
+              </div>
+              <p className="hidden md:block text-center mt-4 leading-6">{`BCard uses payment card fees to buy your community’s tokens from a DEX, creating organic token demand.`}</p>
+            </div>
+           
           </div>
         </section>
       </div>
