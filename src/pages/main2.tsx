@@ -1,6 +1,5 @@
 //()
 import Image from "next/image";
-import Link from "next/link"
 
 let comparisonData = [
   {
@@ -21,8 +20,8 @@ export default function LandingPage() {
   return (
     <>
       <div className="">
-        <header className="relative z-[100] mx-[1em] mb-[2em] mt-[1em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
-          <div className="z-[100] flex px-[1em] py-[1.2em] md:px-[25]">
+        <header className="mx-[1em] mb-[2em] mt-[1em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
+          <div className="flex px-[1em] py-[1.2em] md:px-[25]">
             <Image
               src={"/images/logo-dark.svg"}
               height={100}
@@ -44,22 +43,22 @@ export default function LandingPage() {
         <section className="mt-[4em] grid h-[fit-content] place-items-center">
           <div className="relative grid h-[100%] w-[100%]">
             <Image
-              src={"/curves/hero curve 1.svg"}
-              className="cover z-20 absolute md:mt-[-9em] mt-[-4.4em] w-[103vw] lg:mt-[-13.5em] right-0 left-0"
-              height={200}
-              width={1250}
+              src={"/images/curve 1.svg"}
+              className="absolute w-[100%]"
+              height={1}
+              width={1}
               alt=""
             />
 
             <Image
-              src={"/curves/hero curve 2.svg"}
-              className="cover absolute z-10 w-[103vw] mt-[15em] md:mt-[-7.5em] lg:mt-[-13em] right-0 left-0"
-              height={500}
-              width={1200}
+              src={"/images/curve 2.svg"}
+              className="cover absolute z-10 w-[150%] pt-3"
+              height={1}
+              width={1}
               alt=""
             />
 
-            <div className="z-50 lg:mt-[2em]">
+            <div className="z-50">
               <div className=" flex flex-col-reverse px-[2em] text-center md:grid md:grid-cols-[1fr,1fr] md:px-[3.5em] md:text-left ">
                 <button className="mx-auto mt-6 block rounded-md bg-[#FF005C] px-[2.4em] py-[0.7em] md:hidden">
                   {" "}
@@ -67,7 +66,7 @@ export default function LandingPage() {
                 </button>
                 <Image
                   src={"/images/debit-card-web.svg"}
-                  className="hidden w-[87%] md:block"
+                  className="hidden w-[86%] md:block"
                   height={1}
                   width={1}
                   alt="nlnjlnl"
@@ -81,11 +80,11 @@ export default function LandingPage() {
                 />
 
                 <div className="flex flex-col py-[2.5em]">
-                  <h2 className="poppins leading-[1.3em] text-[2.2em] md:text-[1.85em] font-semibold md:leading-10 lg:text-[2.4em] lg:leading-[1.3em] ">
+                  <h2 className="poppins text-[1.85em] font-semibold leading-10 lg:text-[2.4em] lg:leading-[1.3em] ">
                     The Card to support your community{" "}
-                    <span className="text-[#FFB539]">with every swipe!</span>
+                    <span className="text-[#7F7F7F]">with every swipe!</span>
                   </h2>
-                  <p className="mt-[1em] max-w-[85%]  max-sm:mx-auto">
+                  <p className="mt-[1em] max-w-[85%] text-[#A1A1A1] max-sm:mx-auto">
                     Your BCard redirects payment card fees to your favorite
                     community, and rewards you with tokens.
                   </p>
@@ -99,7 +98,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="mb-2 mt-[5em] grid place-items-center md:mt-[20em]">
+        <section className="mb-5 mt-[5em] grid place-items-center md:mt-[15em]">
           <div className="flex h-[max-content] flex-col gap-[3em] p-5 md:grid md:w-[76%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
             <div className="gradient-bg-1 center-align flex h-[100%] w-[100%] flex-col justify-center rounded-[1.4em] p-4 shadow-lg">
               <Image
@@ -161,78 +160,61 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="mb-[6em] mt-[2em] grid place-items-center md:mt-[5em]">
-          <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[76%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
-            <div className=" center-align grid grid-rows-[9.7em,auto] h-[100%] w-[100%] justify-center rounded-[1.4em] p-4 shadow-lg">
-              <Image
-                src={"/svg/arrow-down-tray.svg"}
-                className=" mx-auto max-w-[8.2em] max-h-[8.2em]"
-                height={150}
-                width={150}
-                alt="image"
-              />
-
-              <h3 className="mt-2 text-center text-[1.65em] font-semibold leading-9 ">
-                Download the App
-              </h3>
-              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6] leading-6">
-              Get a physical/virtual card, choose a community
-              </p>
+        <section className="mb-[6em] mt-[8em] grid w-screen place-items-center">
+          <div className="gradient-bg-table flex flex-col gap-1 rounded-2xl px-2 pb-5 md:px-5">
+            <div className="grid h-[75px] w-[86vw] grid-cols-[0fr,1fr,1fr,1fr,1fr] gap-3 text-center md:w-[73vw] md:grid-cols-[120px,1fr,1fr,1fr,1fr]">
+              <div className="h-[100%] w-[100%] "></div>
+              <div className="h-[100%] w-[100%] text-[1em] font-semibold md:text-[1.25em]">
+                BCard
+              </div>
+              <div className="h-[100%] w-[100%] text-[0.82em] font-semibold md:text-[1em]">
+                Borderless banking cards
+              </div>
+              <div className="h-[100%] w-[100%] text-[0.82em] font-semibold md:text-[1em]">
+                Crypto reward cards
+              </div>
+              <div className="h-[100%] w-[100%] text-[0.82em] font-semibold md:text-[1em]">
+                Crypto spend cards
+              </div>
             </div>
-
-            <div className=" center-align grid grid-rows-[9.7em,auto] h-[100%] w-[100%] justify-center rounded-[1.4em] p-4 shadow-lg">
-              {" "}
-              <Image
-                src={"/svg/currency-dollar.svg"}
-                className=" mx-auto max-w-[8.2em] max-h-[8.2em]"
-                height={150}
-                width={150}
-                alt="image"
-              />
-              <h3 className="mt-2 text-center text-[1.65em]  font-semibold leading-9 ">
-              Make purchases, get token rewards
-
-              </h3>
-              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6] leading-6">
-              50% of net interchange goes to chosen community
-              </p>
-            </div>
-
-            <div className=" center-align grid grid-rows-[9.7em,auto] h-[100%] w-[100%] justify-center rounded-[1.4em] p-4 shadow-lg">
-              {" "}
-              <Image
-                src={"/svg/user-group.svg"}
-                className="mt-0 mx-auto max-w-[8.2em] max-h-[8.2em]"
-                height={150}
-                width={150}
-                alt="image"
-              />
-              <h3 className="mt-2 text-center text-[1.65em] font-semibold leading-9 ">
-              Support your community
-              </h3>
-              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6] leading-6">
-              {`User’s community enjoys increased economic stability and health`}
-              </p>
-            </div>
+            {comparisonData.map((item, value) => (
+              <>
+                <div className="flex h-[fit-content] w-[100%] flex-col gap-3 text-center md:grid md:h-[70px] md:grid-cols-[120px,auto]">
+                  <hr className="block border-[grey] bg-[grey] md:hidden"></hr>
+                  <div className="h-[100%] w-[100%] pl-5 text-left text-[0.96em] font-semibold max-sm:text-[0.7] md:text-center">
+                    {item.name}
+                  </div>
+                  <hr className="block border-[grey] bg-[grey] md:hidden"></hr>
+                  <div className="mb-[1em] grid h-[100%] w-[100%] grid-cols-[1fr,1fr,1fr,1fr] gap-3">
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[0] ? (
+                        <Image
+                          src={"/images/green-tick.png"}
+                          className="cover mx-auto mt-0 min-w-[50px]"
+                          height={1}
+                          width={1}
+                          alt="image"
+                        />
+                      ) : (
+                        null
+                      )}
+                    </div>
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[1] ? "yes" : null}
+                    </div>
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[2] ? "yes" : null}
+                    </div>
+                    <div className="h-[100%] w-[100%]">
+                      {item.fields[3] ? "yes" : null}
+                    </div>
+                  </div>
+                </div>
+              </>
+            ))}
           </div>
         </section>
-
-        <section className="hidden mb-4 md:grid place-items-center md:mt-[-50em] lg:mt-[-58em]">
-          <div className="grid relative w-[110%]">
-          <div className="">
-            <Image
-                src={"/curves/curve 7.svg"}
-                className="w-[100%]"
-                height={1}
-                width={1}
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-
-
-        <section className="md:hidden mt-5 flex w-screen mb-[5em] max-sm:mt-[10em]">
+        <section className="flex w-screen mb-[5em] max-sm:mt-[10em]">
           <div className="grid relative w-[100%]">
             <div className="absolute">
             <Image
@@ -286,18 +268,26 @@ export default function LandingPage() {
           </div>
           
         </section>
-        <section className="hidden md:grid place-items-center md:mt-[-18em] lg:mt-[-22em]">
-          <div className="grid w-[110%]">
-          
+        <section className="hidden md:grid place-items-center mt-[8em]">
+          <div className="grid relative w-[110%]">
+          <div className="absolute">
+            <Image
+                src={"/images/curve 5.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+            </div>
             <div className="grid place-items-center text-center w-[90%] mx-auto pt-[8em] z-40">
-              <h2 className="text-[3em] mb-3 max-w-[62%] font-semibold leading-[1.3em]">Give your community a way to support your cause  </h2>
-              <p className="md:max-w-[35%] mt-[2em] mb-[3.4em] text-[#9AA0A6] text-[1em]">BCard works for every community, no matter how big or small, whether or not you have a token. </p>
+              <h2 className="text-[2.7em] mb-5 max-w-[50%] font-semibold leading-[1.3em]">Give your community a way to support your cause  </h2>
+              <p className="md:max-w-[35%]">BCard works for every community, no matter how big or small, whether or not you have a token. </p>
             </div>
           </div>
         </section>
 
 
-        <section className="relative mb-[12em] md:mb-[15em] z-50">
+        <section className="relative mb-[15em] z-50">
           <div className="flex flex-col-reverse max-sm:w-[92%] w-[90%] md:grid md:place-items-center md:grid-cols-[1fr,1fr] h-[fit-content] mx-auto md:h-[5em] mt-[2em] md:mx-auto w-[70%] gap-[5em] md:gap-[6em]">
             <div className="p-5 shadow-md gradient-bg-blue-purple rounded-xl h-[100%] w-[100%]">
               <div className="flex flex-col-reverse md:grid md:grid-cols-[70%,30%] pt-4 gap-2">
@@ -342,13 +332,49 @@ export default function LandingPage() {
         </section>
 
 
-        <section className="md:hidden grid place-items-center md:mt-[25em]">
-          
-          <button className=" z-50 mx-auto mt-5 bg-[black] rounded-md border border-white px-[2.6em] py-[0.7em]">Meet all of us</button>
+        <section className="grid place-items-center mt-[3.5em] md:mt-[25em]">
+          <h3 className="mb-[1.5em] text-[2.4em]">Meet the team</h3>
+          <div className="grid relative place-items-center w-screen">
+            <div className="absolute">
+              <Image
+                src={"/images/curve 6.svg"}
+                className="w-[100%] mt-[-8em]"
+                height={1}
+                width={1}
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col md:grid md:grid-cols-[1fr,1fr,1fr] place-items-center z-50 gap-[4em] mx-auto w-[90%] md:w-[80%]">
+              <Image
+                src={"/images/bacard uiser 2.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+              <Image
+                src={"/images/bcard user 3.png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+              <Image
+                src={"/images/bcard user 1 (1).png"}
+                className="w-[100%]"
+                height={1}
+                width={1}
+                alt=""
+              />
+              
+              </div>
+              
+          </div>
+          <button className="z-50 mx-auto mt-5 bg-[black] rounded-md border border-white px-[2.6em] py-[0.7em]">Meet all of us</button>
         </section>
 
 
-        <section className="grid place-items-center mt-[5em] md:mt-[25em] mb-[5em]">
+        <section className="grid place-items-center mt-[6em] mb-[5em]">
           <h3 className="tracking-[0.7em]">OUR PARTNERS</h3>
           <div className="mt-[4em] flex max-sm:flex-col gap-[4em] max-sm:justify-center justify-between center-align w-[50%]">
           <Image
@@ -376,9 +402,17 @@ export default function LandingPage() {
           </div>
         </section>
 
+        <section className="hidden md:grid place-items-center mt-[10em]">
+          <h3 className="mb-[1.5em] text-[2em] font-semibold">FAQ</h3>
+          <p className="px-3 py-5 border border-white mt-1">
+          Dive into our FAQs for all you need to know about navigating the world with BCard</p>
+          <div className="mt-[3em] border border-white w-[70%] h-[26em]"></div>
+        </section>
+
+
 
         <section className="grid place-items-center  mt-[10em] mb-[5em]">
-        <h3 className="mb-[1.5em] text-[1.8em] font-semibold text-center leading-[2em]">Contact us</h3>
+        <h3 className="mb-[1.5em] text-[1.8em] font-semibold text-center leading-[2em]">Ready to get started?{<br></br>}Contact us.</h3>
           <div className="flex flex-col gap-4 w-[90%] md:w-[65%] justify-center center-align">
             <div className="flex max-sm:flex-col max-sm:w-[200%] gap-4 w-[100%]">
             <input 
@@ -417,37 +451,27 @@ export default function LandingPage() {
                   </button>
         </section>
 
-        
+        <section>
+        <Image
+                src={"/images/Frame 10.svg"}
+                className="w-[100%] mt-[8em] max-sm:hidden max-sm:mb-[5em]"
+                height={1}
+                width={1}
+                alt=""
+              />
+        </section>
 
-        <hr className="mb-[1em] mt-[8em] bg-grey border-[grey] border"></hr>
-
-    <section className="grid place-items-center  mb-[4em]">
+    
+    <section className="max-sm:hidden">
     <Image
               src={"/images/logo-dark.svg"}
               height={1}
               width={1}
-              className="w-[35%] md:w-[15%] ml-5 mt-[1em] mb-[2em]"
+              className="w-[10%] ml-5 mt-[15em] mb-[2em]"
               alt="logo"
             />
-
-<div className="text-center mt-[1.8em] flex max-sm:flex-col gap-[4em] max-sm:justify-center justify-between center-align w-[50%]">
-  <Link className="mx-auto w-[fit-content]" href="">Link 1</Link>
-  <Link className="mx-auto w-[fit-content]" href="">Link 2</Link>
-  <Link className="mx-auto w-[fit-content]" href="">Link 3</Link>
-  <Link className="mx-auto w-[fit-content]" href="">Link 4</Link>
-</div>
-
   
-        
-    </section>
-
-    <section className="flex max-sm:gap-[4em] max-sm:mt-[-1em] max-sm:flex-col max-sm:justify-center max-sm:center-align">
-      <div className="flex gap-2 px-3 py-4 max-sm:mx-auto w-[fit-content]">
-        <Link href=""><Image src="/icons/discord-alt-logo.svg" height={20} width={20} alt="" /></Link>
-        <Link href=""><Image src="/icons/twitter-x-logo.svg" height={20} width={20} alt="" /></Link>
-        <Link href=""><Image src="/icons/youtube-logo.svg" height={20} width={20} alt="" /></Link>
-      </div>
-      <p className="md:mr-0 md:ml-auto max-sm:mx-auto text-center px-3 py-4 text-[#9AA0A6] max-sm:text-[1.3em]">All rights reserved 2024 BCard</p>
+        <hr className="mb-[14em] bg-grey border-[grey] border"></hr>
     </section>
  
           
