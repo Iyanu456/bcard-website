@@ -29,7 +29,7 @@ export default function LandingPage() {
               width={100}
               alt="logo"
             />
-            <button className="ml-auto mr-0">
+            <button className="block ml-auto mr-0 md:hidden">
               <Image
                 className=" min-w-[25px]"
                 src={"/images/hamburger.svg"}
@@ -38,6 +38,17 @@ export default function LandingPage() {
                 alt="ham"
               />
             </button>
+            <ul className="hidden md:flex gap-[3em] ml-auto mr-0 pr-[1em]">
+              <li>
+                <Link href="" className="hover:text-[#FFB539] transition">How it works</Link>
+              </li>
+              <li>
+                <Link href="" className="hover:text-[#FFB539] transition">Learn More</Link>
+              </li>
+              <li>
+                <Link href="" className="hover:text-[#FFB539] transition">DAO Info</Link>
+              </li>
+            </ul>
           </div>
         </header>
 
@@ -100,17 +111,17 @@ export default function LandingPage() {
         </section>
 
         <section className="mb-2 mt-[5em] grid place-items-center md:mt-[20em]">
-          <div className="flex h-[max-content] flex-col gap-[3em] p-5 md:grid md:w-[76%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
+          <div className="flex h-[max-content] flex-col gap-[3em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
             <div className="gradient-bg-1 center-align flex h-[100%] w-[100%] flex-col justify-center rounded-[1.4em] p-4 shadow-lg">
               <Image
                 src={"/images/card 1.png"}
-                className="cover mx-auto w-[100%]"
+                className="cover mx-auto w-[100%] mt-[-2em]"
                 height={1}
                 width={1}
                 alt="image"
               />
 
-              <h3 className="mt-2 text-center text-[1.6em] font-semibold leading-8 ">
+              <h3 className="mt-[-2em] text-center text-[1.6em] font-semibold leading-8 ">
                 The <span className="text-[#FF5810]">community</span> owned
                 card!
               </h3>
@@ -124,7 +135,7 @@ export default function LandingPage() {
               {" "}
               <Image
                 src={"/images/card 2.png"}
-                className="cover mx-auto w-[90%]"
+                className="cover mx-auto w-[85%]"
                 height={1}
                 width={1}
                 alt="image"
@@ -162,7 +173,7 @@ export default function LandingPage() {
         </section>
 
         <section className="mb-[6em] mt-[2em] grid place-items-center md:mt-[5em]">
-          <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[76%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
+          <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
             <div className=" center-align grid grid-rows-[9.7em,auto] h-[100%] w-[100%] justify-center rounded-[1.4em] p-4 shadow-lg">
               <Image
                 src={"/svg/arrow-down-tray.svg"}
