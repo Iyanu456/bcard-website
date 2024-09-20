@@ -1,6 +1,10 @@
+"use client"
 //()
-import Image from "next/image";
+import { useState } from 'react'
+//import { Image } from "next/dist/client/image-component";
+import Image from 'next/image';
 import Link from "next/link"
+import Sidebar from './components/sidebar';
 
 let comparisonData = [
   {
@@ -18,8 +22,11 @@ let comparisonData = [
 ];
 
 export default function LandingPage() {
+
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   return (
     <>
+    {sidebarOpen && <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />}
       <div className="">
         <header className="relative z-[100] mx-[1em] mb-[2em] mt-[1em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
           <div className="z-[100] flex px-[1em] py-[1.2em] md:px-[25]">
@@ -29,7 +36,11 @@ export default function LandingPage() {
               width={100}
               alt="logo"
             />
-            <button className="block ml-auto mr-0 md:hidden">
+            <button 
+            onClick={() => {
+							setSidebarOpen(!sidebarOpen)}}
+            className="block ml-auto mr-0 md:hidden"
+            >
               <Image
                 className=" min-w-[25px]"
                 src={"/images/hamburger.svg"}
@@ -92,7 +103,7 @@ export default function LandingPage() {
                 />
 
                 <div className="flex flex-col py-[2.5em]">
-                  <h2 className="poppins leading-[1.3em] text-[2.2em] md:text-[1.85em] font-semibold md:leading-10 lg:text-[2.4em] lg:leading-[1.3em] ">
+                  <h2 className="poppins  text-[2.2em] md:text-[1.85em] font-semibold md:leading-10 lg:text-[2.4em] lg:leading-[1.3em] ">
                     The Card to support your community{" "}
                     <span className="text-[#FFB539]">with every swipe!</span>
                   </h2>
@@ -458,7 +469,7 @@ export default function LandingPage() {
         <Link href=""><Image src="/icons/twitter-x-logo.svg" height={20} width={20} alt="" /></Link>
         <Link href=""><Image src="/icons/youtube-logo.svg" height={20} width={20} alt="" /></Link>
       </div>
-      <p className="md:mr-0 md:ml-auto max-sm:mx-auto text-center px-3 py-4 text-[#9AA0A6] max-sm:text-[1.3em]">All rights reserved 2024 BCard</p>
+      <p className="md:mr-0 md:ml-auto max-sm:mx-auto text-center px-3 py-4 text-[#9AA0A6] max-sm:text-[0.95em]">All rights reserved 2024 BCard</p>
     </section>
  
           

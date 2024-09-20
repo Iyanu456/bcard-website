@@ -59,7 +59,31 @@ a {
   background: linear-gradient(to right, #2B945C, #7635CA 100%);
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px; 
+  width: 280px;
+  height: 100%;
+  z-index: 400;
+  transition: right 0.5s ease;
+  background: #161616;
+  color: white;
+  /*box-shadow: rgba(50, 50, 50, 0.09) 10px 10px 12px;/
+  /*border-radius: 0 0 0 15px;/
+  border: 2px solid rgba(100, 100, 100, 0.15);
+  padding: 2em;
+  display: grid;
+  place-items: center;
+  background: rgba(10, 13, 30, 0.99);
+  border-left: 1px solid rgba(225, 225, 225, 0.2);
+  box-shadow: rgba(15, 15, 15, 0.12) 12px 20px 8px 6px;
+  backdrop-filter: blur(1px);*/
+}
 
+.sidebar.open {
+  right: 0; /* Slide in when 'open' class is present /
+}
 
 @media (prefers-color-scheme: dark) {
   html {
