@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 interface sidebarProps {
-    setSidebarOpen: (arg: boolean) => boolean;
+    setSidebarOpen: (arg: boolean) => void;
     sidebarOpen: boolean;
 }
 
