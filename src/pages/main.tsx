@@ -170,7 +170,7 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] md:mb-[15em] mt-[2em] grid place-items-center md:mt-[5em]">
+        <section className="mb-[6em] md:mb-[-27em] mt-[2em] grid place-items-center md:mt-[5em]">
         <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
           {card_group2.map((item, index) => (
             <>
@@ -194,12 +194,12 @@ export default function LandingPage() {
 
         
 
-        <section className="mb-4 hidden place-items-center  md:grid ">
+        <section className="z-[100] mb-4 hidden place-items-center  md:grid md:mb-[3em]">
           <div className="relative grid w-[110%]">
             <div className="">
               <Image
                 src={"/curves/curve 7.svg"}
-                className="w-[100%]  object-cover"
+                className="w-[100%] max-h-[55em] object-cover"
                 height={1}
                 width={1}
                 alt=""
@@ -209,7 +209,7 @@ export default function LandingPage() {
         </section>
 
         <section className="mb-[5em] mt-5 flex w-screen max-sm:mt-[10em] md:hidden">
-          <div className="relative grid w-[100%]">
+          <div className="relative grid w-[100%] z-[50]">
             <div className="absolute">
               <Image
                 src={"/images/curve 4.png"}
@@ -269,9 +269,9 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="hidden place-items-center md:mt-[-18em] md:grid lg:mt-[-22em]">
+        <section className="hidden place-items-center  md:grid">
           <div className="grid w-[110%]">
-            <div className="z-40 mx-auto grid w-[90%] place-items-center pt-[8em] text-center">
+            <div className="z-40 mx-auto grid w-[90%] place-items-center pt-[4em] text-center">
               <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold ">
                 Give your community a way to support your cause{" "}
               </h2>
