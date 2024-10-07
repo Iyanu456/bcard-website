@@ -32,13 +32,13 @@ export default function Header() {
             </button>
             <ul className="hidden sm:flex gap-[3em] ml-auto mr-0 pr-[1em]">
               <li>
-                <Link href="" className="hover:text-[#FFB539] transition">How it works</Link>
+                <Link href="https://support.getbcard.io/" className="hover:text-[#FFB539] transition">How it works</Link>
               </li>
               <li>
-                <Link href="" className="hover:text-[#FFB539] transition">Learn More</Link>
+                <Link href="https://support.getbcard.io/" className="hover:text-[#FFB539] transition">Learn More</Link>
               </li>
               <li>
-                <Link href="" className="hover:text-[#FFB539] transition">DAO Info</Link>
+                <Link href="https://support.getbcard.io/" className="hover:text-[#FFB539] transition">DAO Info</Link>
               </li>
             </ul>
           </div>

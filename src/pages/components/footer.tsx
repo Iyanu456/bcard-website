@@ -30,8 +30,8 @@ export default function Footer() {
           </Link>
         </div>
       </section>
-      <section className="max-sm:center-align flex max-sm:mt-[-1em] max-sm:flex-col max-sm:justify-center max-sm:gap-[4em]">
-        <div className="flex w-[fit-content] gap-2 px-3 py-4 max-sm:mx-auto">
+      <section className="max-sm:center-align flex justify-between max-sm:mt-[-1em] max-sm:flex-col max-sm:justify-center max-sm:gap-[4em]">
+        <div className="flex justify-between w-[fit-content] gap-2 px-3 py-4 max-sm:mx-auto">
           <Link href="">
             <Image
               src="/icons/discord-alt-logo.svg"

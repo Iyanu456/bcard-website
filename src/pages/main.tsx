@@ -111,10 +111,10 @@ export default function LandingPage() {
 
             <div className="z-50 lg:mt-[2em]">
               <div className=" flex flex-col-reverse px-[2em] text-center md:grid md:grid-cols-[1fr,1fr] md:px-[3.5em] md:text-left ">
-                <button className="mx-auto mt-6 block rounded-md bg-[#FF005C] px-[2.4em] py-[0.7em] md:hidden">
+                <Link href="https://app.getbcard.io/" className="mx-auto mt-6 block rounded-md bg-[#FF005C] px-[2.4em] py-[0.7em] md:hidden">
                   {" "}
                   Sign up Now
-                </button>
+                </Link>
                 <Image
                   src={"/images/debit-card-web.svg"}
                   className="hidden md:w-[87%] md:block"
@@ -170,7 +170,7 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] md:mb-[-27em] mt-[2em] grid place-items-center md:mt-[5em]">
+        <section className="mb-[6em] md:mb-[-38em] lg:mb-[-52em] mt-[2em] grid place-items-center md:mt-[5em]">
         <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
           {card_group2.map((item, index) => (
             <>
@@ -194,12 +194,12 @@ export default function LandingPage() {
 
         
 
-        <section className="z-[100] mb-4 hidden place-items-center  md:grid md:mb-[3em]">
+        <section className="z-[100] mb-4 hidden place-items-center md:mt-[-17.5em] lg:mt-[-20em]  md:grid md:mb-[-14em]">
           <div className="relative grid w-[110%]">
             <div className="">
               <Image
                 src={"/curves/curve 7.svg"}
-                className="w-[100%] max-h-[55em] object-cover"
+                className="w-[100%]"
                 height={1}
                 width={1}
                 alt=""
@@ -224,7 +224,7 @@ export default function LandingPage() {
               <div className=" center-align flex flex-col justify-center text-center md:mt-[5em]">
                 <Image
                   src={"/images/android-phone.svg"}
-                  className="mx-auto w-[34%]"
+                  className="mx-auto md:w-[34%] w-[32%]"
                   height={1}
                   width={1}
                   alt=""
@@ -240,7 +240,7 @@ export default function LandingPage() {
               <div className=" center-align flex flex-col justify-center text-center md:mt-[-5em]">
                 <Image
                   src={"/images/credit-card-bubbles.svg"}
-                  className="mx-auto w-[66%]"
+                  className="mx-auto md:w-[66%] w-[50%]"
                   height={1}
                   width={1}
                   alt=""
@@ -256,7 +256,7 @@ export default function LandingPage() {
               <div className=" center-align flex flex-col justify-center text-center md:mt-[4em]">
                 <Image
                   src={"/images/Union.svg"}
-                  className="mx-auto w-[50%]"
+                  className="mx-auto md:w-[50%] w-[45%]"
                   height={1}
                   width={1}
                   alt=""
@@ -343,7 +343,7 @@ export default function LandingPage() {
 
         <section className="mb-[5em] mt-[5em] grid place-items-center md:mt-[25em]">
           <h3 className="tracking-[0.7em]">OUR PARTNERS</h3>
-          <div className="center-align mt-[4em] flex w-[50%] justify-between gap-[4em] max-sm:flex-col max-sm:justify-center">
+          <div className="center-align mt-[4em] flex w-[50%] md:justify-between gap-[4em] max-sm:flex-col justify-center">
             <Image
               src={"/images/image 15.svg"}
               className="mx-auto w-[6em]"
