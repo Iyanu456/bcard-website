@@ -54,6 +54,26 @@ const card_group1 = [
   },
 ];
 
+const card_group2 = [
+  {
+    src: "/svg/arrow-down-tray.svg",
+    title: `Download the App`,
+    caption: `Get a physical/virtual card, choose a community`,
+  },
+  {
+    src: "/svg/currency-dollar.svg",
+    title: `Make purchases, get token rewards`,
+    caption: `50% of net interchange goes to chosen community`,
+  },
+  {
+    src: "/svg/user-group.svg",
+    title: `Support your community`,
+    caption: `User’s community enjoys increased economic stability and health`,
+  }
+
+  
+];
+
 export default function LandingPage() {
   return (
     <>
@@ -129,11 +149,11 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="mb-2 mt-[5em] grid place-items-center md:mt-[20em]">
-        <div className="flex flex-wrap justify-center center-align h-[max-content] md:grid gap-[2em]  place-items-center md:grid-cols-[1fr,1fr,1fr] md:max-w-[80%] md:gap-6 max-sm:px-4">
+        <section className="mb-2 mt-[5em]  sm:mt-[12em] grid place-items-center md:mt-[20em]">
+        <div className="flex flex-wrap justify-center center-align h-[max-content] md:grid gap-[2em]  place-items-center md:grid-cols-[1fr,1fr,1fr] md:max-w-[83%] md:gap-6 max-sm:px-4">
           {card_group1.map((item, index) => (
             <>
-              <div key={index} className={`${item.gradient_classname} center-align flex w-[80%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[34em] flex-col justify-center rounded-[1.4em] p-4 shadow-lg`}>
+              <div key={index} className={`${item.gradient_classname} center-align flex w-[80%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[34em] lg:max-w-[20em] flex-col justify-center rounded-[1.4em] p-4 shadow-lg`}>
               <Image
                 src={item.src}
                 className={item.image_classname}
@@ -150,67 +170,36 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] mt-[2em] grid place-items-center md:mt-[5em]">
-          <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
-            <div className=" center-align grid h-[100%] w-[100%] grid-rows-[9.7em,auto] justify-center rounded-[1.4em] p-4 shadow-lg">
+        <section className="mb-[6em] md:mb-[15em] mt-[2em] grid place-items-center md:mt-[5em]">
+        <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
+          {card_group2.map((item, index) => (
+            <>
+              <div key={index} className=" center-align grid h-[100%] w-[100%] grid-rows-[9.7em,auto] justify-center rounded-[1.4em] p-4 shadow-lg">
               <Image
-                src={"/svg/arrow-down-tray.svg"}
+                src={item.src}
                 className=" mx-auto max-h-[8.2em] max-w-[8.2em]"
                 height={150}
                 width={150}
                 alt="image"
               />
 
-              <h3 className="mt-2 text-center text-[1.65em] font-semibold ">
-                Download the App
-              </h3>
-              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6]">
-                Get a physical/virtual card, choose a community
-              </p>
+              <h3 className="mt-2 text-center text-[1.65em] font-semibold ">{item.title}</h3>
+              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6]">{item.caption}</p>
             </div>
-
-            <div className=" center-align grid h-[100%] w-[100%] grid-rows-[9.7em,auto] justify-center rounded-[1.4em] p-4 shadow-lg">
-              {" "}
-              <Image
-                src={"/svg/currency-dollar.svg"}
-                className=" mx-auto max-h-[8.2em] max-w-[8.2em]"
-                height={150}
-                width={150}
-                alt="image"
-              />
-              <h3 className="mt-2 text-center text-[1.65em]  font-semibold ">
-                Make purchases, get token rewards
-              </h3>
-              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6]">
-                50% of net interchange goes to chosen community
-              </p>
-            </div>
-
-            <div className=" center-align grid h-[100%] w-[100%] grid-rows-[9.7em,auto] justify-center rounded-[1.4em] p-4 shadow-lg">
-              {" "}
-              <Image
-                src={"/svg/user-group.svg"}
-                className="mx-auto mt-0 max-h-[8.2em] max-w-[8.2em]"
-                height={150}
-                width={150}
-                alt="image"
-              />
-              <h3 className="mt-2 text-center text-[1.65em] font-semibold ">
-                Support your community
-              </h3>
-              <p className="mb-2 mt-[1em] text-center text-[1em] text-[#9AA0A6] ">
-                {`User’s community enjoys increased economic stability and health`}
-              </p>
-            </div>
-          </div>
+            </>
+          ))}
+        </div>
+        
         </section>
 
-        <section className="mb-4 hidden place-items-center md:mt-[-50em] md:grid lg:mt-[-58em]">
+        
+
+        <section className="mb-4 hidden place-items-center  md:grid ">
           <div className="relative grid w-[110%]">
             <div className="">
               <Image
                 src={"/curves/curve 7.svg"}
-                className="w-[100%]"
+                className="w-[100%]  object-cover"
                 height={1}
                 width={1}
                 alt=""
