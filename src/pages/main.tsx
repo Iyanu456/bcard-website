@@ -153,7 +153,7 @@ export default function LandingPage() {
         <div className="flex flex-wrap justify-center center-align h-[max-content] md:grid gap-[2em]  place-items-center md:grid-cols-[1fr,1fr,1fr] md:max-w-[83%] md:gap-6 max-sm:px-4">
           {card_group1.map((item, index) => (
             <>
-              <div key={index} className={`${item.gradient_classname} center-align flex w-[100%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[34em] lg:max-w-[20em] flex-col justify-center rounded-[1.4em] p-4 shadow-lg`}>
+              <div key={index} className={`${item.gradient_classname} center-align flex w-[100%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[30em] lg:max-w-[20em] flex-col justify-center rounded-[1.4em] p-4 shadow-lg`}>
               <Image
                 src={item.src}
                 className={item.image_classname}
