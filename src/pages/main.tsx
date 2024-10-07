@@ -24,7 +24,7 @@ let comparisonData = [
 const card_group1 = [
   {
     src: "/images/card 1.png",
-    image_classname: "mb-[-3.4em] cover mx-auto w-[100%] mt-[-2em]",
+    image_classname: "mb-[-6em] md:mb-[-3.4em] cover mx-auto  w-[70%] md:w-[100%] mt-[-2em]",
     title: `The <span class="text-[#FF5810]">community</span> owned
     card!`,
     caption: `Your Defy Card is by DAOs, for DAOs. Unlike centralized crypto
@@ -34,7 +34,7 @@ const card_group1 = [
 
   {
     src: "/images/card 2.png",
-    image_classname: "cover mx-auto w-[85%]",
+    image_classname: "cover mx-auto w-[68%] md:w-[85%]",
     title: `Support your <span class="text-[#13B5EC]">favorite</span>
     communities`,
     caption: `Every time you use a card, 1-2% of the purchase price goes to a
@@ -45,14 +45,14 @@ const card_group1 = [
 
   {
     src: "/images/card 3.png",
-    image_classname: "cover mx-auto w-[78%]",
+    image_classname: "cover mx-auto w-[60%] md:w-[78%]",
     title: `Easily
     <span class="text-[#27FFA4]"> onboard</span> new members`,
     caption: `With our easy-to-use mobile app, you can onboard new friends
     into your community with a simple download.`,
     gradient_classname: "gradient-bg-3"
   },
-];
+]
 
 const card_group2 = [
   {
@@ -124,7 +124,7 @@ export default function LandingPage() {
                 />
                 <Image
                   src={"/images/bcard-home-hero.png"}
-                  className="block w-[86%] sm:w-[50%] mx-auto md:hidden "
+                  className="block w-[83%] sm:w-[50%] mx-auto md:hidden "
                   height={1}
                   width={1}
                   alt="nlnjlnl"
@@ -153,7 +153,7 @@ export default function LandingPage() {
         <div className="flex flex-wrap justify-center center-align h-[max-content] md:grid gap-[2em]  place-items-center md:grid-cols-[1fr,1fr,1fr] md:max-w-[83%] md:gap-6 max-sm:px-4">
           {card_group1.map((item, index) => (
             <>
-              <div key={index} className={`${item.gradient_classname} center-align flex w-[100%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[30em] lg:max-w-[20em] flex-col justify-center rounded-[1.4em] p-4 shadow-lg`}>
+              <div key={index} className={`${item.gradient_classname} center-align flex w-[100%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[fit-content] lg:max-w-[20em] flex-col justify-center rounded-[1.4em] p-4 shadow-lg`}>
               <Image
                 src={item.src}
                 className={item.image_classname}
@@ -284,7 +284,7 @@ export default function LandingPage() {
         </section>
 
         <section className="relative z-50 mb-[12em] md:mb-[15em]">
-          <div className="mx-auto mt-[2em] flex h-[fit-content] w-[70%] w-[90%] flex-col-reverse gap-[5em] max-sm:w-[92%] md:mx-auto md:grid md:h-[5em] md:grid-cols-[1fr,1fr] md:place-items-center md:gap-[6em]">
+          <div className="mx-auto mt-[2em] flex h-[fit-content] w-[70%] w-[90%] flex-col-reverse gap-[2em] max-sm:w-[92%] md:mx-auto md:grid md:h-[5em] md:grid-cols-[1fr,1fr] md:place-items-center md:gap-[6em]">
             <div className="gradient-bg-blue-purple h-[100%] w-[100%] rounded-xl p-5 shadow-md">
               <div className="flex flex-col-reverse gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
                 <h2 className="text-[1.6em] font-semibold max-sm:mt-[-1.8em] md:px-4 md:text-[1.4em] ">
@@ -294,7 +294,7 @@ export default function LandingPage() {
                 <div>
                   <Image
                     src={"/images/image 22.svg"}
-                    className="w-[50%] mix-blend-screen max-sm:mx-auto max-sm:mt-[-3.6em] max-sm:h-[10%] max-sm:rotate-90 md:w-[90%]"
+                    className="w-[50%] sm:w-[38%] md:my-auto mix-blend-screen max-sm:mx-auto max-sm:mt-[-3.6em]  max-sm:h-[10%] md:rotate-0 max-sm:rotate-90 sm:rotate-90 sm:mx-auto sm:my-[-4.3em] md:w-[90%]"
                     height={1}
                     width={1}
                     alt=""
@@ -313,17 +313,17 @@ export default function LandingPage() {
                   <span className="text-[#14FF00]">Fuelling</span> projects and
                   aspirations with every swipe
                 </h2>
-                <div className="max-sm:flex max-sm:justify-center max-sm:gap-[1.5em]">
+                <div className="flex justify-center gap-[1.5em] md:block mb-3 md:mb-0 ">
                   <Image
                     src={"/images/arrow.svg"}
-                    className="mix-blend-screen max-sm:w-[20%] md:w-[80%]"
+                    className="mix-blend-screen w-[19%] md:w-[80%]"
                     height={1}
                     width={1}
                     alt=""
                   />
                   <Image
                     src={"/images/arrow.svg"}
-                    className="block w-[20%] mix-blend-screen md:hidden"
+                    className="block w-[19%] mix-blend-screen md:hidden"
                     height={1}
                     width={1}
                     alt=""
