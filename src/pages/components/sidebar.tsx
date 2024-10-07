@@ -16,7 +16,7 @@ export default function Sidebar(props: sidebarProps) {
 	}
 
 	return (
-		<div className={`md:hidden sidebar grid grid-rows-[3.5em,auto] place-items-center w-[100%] ${props.sidebarOpen ? "open" : null}`}>
+		<div className={`sm:hidden sidebar grid grid-rows-[3.5em,auto] place-items-center w-[100%] ${props.sidebarOpen ? "open" : null}`}>
 		<button onClick={closeSidebar}  className="h-[100%] mt-[3.8em] w-[fit-content] grid place-items-center mb-[2em] ml-auto mr-[2em]">
             <Image 
             height={25}
