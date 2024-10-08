@@ -139,10 +139,10 @@ export default function LandingPage() {
                     Your BCard redirects payment card fees to your favorite
                     community, and rewards you with tokens.
                   </p>
-                  <button className="mx-auto mt-5 hidden rounded-md bg-[#FF005C] px-[2.4em] py-[0.7em] md:block">
+                  <Link href="https://app.getbcard.io/" className="mx-auto mt-5 hidden rounded-md bg-[#FF005C] px-[2.4em] py-[0.7em] md:block">
                     {" "}
                     Sign up Now
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
