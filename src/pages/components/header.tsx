@@ -11,12 +11,14 @@ export default function Header() {
         <>
         <header className="relative z-[100] mx-[1em] mb-[2em] mt-[1em] rounded-lg bg-[#2D2D2D] text-white md:mx-[2.2em]">
           <div className="z-[100] flex px-[1em] py-[1.2em] md:px-[25]">
+            <Link href="/">
             <Image
               src={"/images/logo-dark.svg"}
               height={100}
               width={100}
               alt="logo"
             />
+            </Link>
             <button 
             onClick={() => {
 							setSidebarOpen(!sidebarOpen)}}
