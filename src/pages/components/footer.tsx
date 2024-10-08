@@ -40,7 +40,7 @@ export default function Footer() {
               alt=""
             />
           </Link>
-          <Link href="">
+          <Link href="https://x.com/getbcard">
             <Image
               src="/icons/twitter-x-logo.svg"
               height={20}
@@ -48,7 +48,7 @@ export default function Footer() {
               alt=""
             />
           </Link>
-          <Link href="">
+          <Link href="https://youtube.com/@getbcard?si=beyAfAtqgNfOq7Bn">
             <Image
               src="/icons/youtube-logo.svg"
               height={20}

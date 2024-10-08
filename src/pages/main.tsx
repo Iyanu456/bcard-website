@@ -313,7 +313,7 @@ export default function LandingPage() {
                   <span className="text-[#14FF00]">Fuelling</span> projects and
                   aspirations with every swipe
                 </h2>
-                <div className="flex justify-center gap-[1.5em] md:block mb-3 md:mb-0  mt-4 mb-[1.7em]">
+                <div className="flex justify-center gap-[1.5em] md:block mb-3 md:mb-0  sm:mt-4 sm:mb-[1.7em]">
                   <Image
                     src={"/images/arrow.svg"}
                     className="mix-blend-screen w-[22%] md:w-[80%]"
@@ -405,10 +405,10 @@ export default function LandingPage() {
               ></textarea>
             </div>
           </div>
-          <button className="mx-auto mt-[2em] rounded-md bg-[#FF005C] px-[2.6em] py-[0.7em]">
+          <Link href="https://support.getbcard.io/" className="mx-auto mt-[2em] rounded-md bg-[#FF005C] px-[2.6em] py-[0.7em]">
             {" "}
             Contact us
-          </button>
+          </Link>
         </section>
       </div>
       <Footer />
