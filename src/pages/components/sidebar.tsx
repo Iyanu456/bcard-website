@@ -26,15 +26,15 @@ export default function Sidebar(props: sidebarProps) {
             className=" ml-auto mr-o"/></button>
 
             <div className="flex flex-col m-auto h-[fit-content]">
-			<Link onClick={closeSidebar} href="" >
+			<Link href="https://support.getbcard.io/" onClick={closeSidebar} >
 				<div className="hover:bg-[rgba(150,150,150,0.2)] grid place-items-center p-[0.8em]" >How it works</div>
 			</Link>
 
-			<Link onClick={closeSidebar} href="" >
+			<Link href="https://support.getbcard.io/" onClick={closeSidebar} >
 				<div className="hover:bg-[rgba(150,150,150,0.2)] grid place-items-center p-[0.8em]">Learn More</div>
 			</Link>
 
-            <Link onClick={closeSidebar} href="" >
+            <Link href="https://support.getbcard.io/" onClick={closeSidebar} >
 				<div className="hover:bg-[rgba(150,150,150,0.2)] grid place-items-center p-[0.8em]">DAO Info</div>
 			</Link>
             </div>
