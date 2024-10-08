@@ -24,7 +24,7 @@ let comparisonData = [
 const card_group1 = [
   {
     src: "/images/card 1.png",
-    image_classname: "mb-[-6em] md:mb-[-3.4em] cover mx-auto  w-[70%] md:w-[100%] mt-[-2em]",
+    image_classname: "max-sm:mb-[-1.5em] sm:mb-[-2em] md:mb-[-3.4em] cover mx-auto  w-[70%] md:w-[100%] mt-[-2em]",
     title: `The <span class="text-[#FF5810]">community</span> owned
     card!`,
     caption: `Your Defy Card is by DAOs, for DAOs. Unlike centralized crypto
@@ -283,10 +283,10 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="relative z-50 mb-[12em] md:mb-[15em]">
-          <div className="mx-auto mt-[2em] flex h-[fit-content] w-[70%] w-[90%] flex-col-reverse gap-[2em] max-sm:w-[92%] md:mx-auto md:grid md:h-[5em] md:grid-cols-[1fr,1fr] md:place-items-center md:gap-[6em]">
+        <section className="relative z-50 mb-[10em] sm:mb-[6em] md:mb-[15em]">
+          <div className="mx-auto mt-[2em] flex h-[fit-content] w-[70%] w-[90%] flex-col-reverse gap-[2em] max-sm:w-[92%] md:mx-auto sm:grid md:h-[5em] sm:grid-cols-[1fr,1fr] md:place-items-center md:gap-[6em]">
             <div className="gradient-bg-blue-purple h-[100%] w-[100%] rounded-xl p-5 shadow-md">
-              <div className="flex flex-col-reverse gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
+              <div className="flex  flex-col-reverse gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
                 <h2 className="text-[1.6em] font-semibold max-sm:mt-[-1.8em] md:px-4 md:text-[1.4em] ">
                   {`Bcard powers your community’s `}
                   {<span className="text-[#08BFFF]">economic</span>} engine
@@ -294,7 +294,7 @@ export default function LandingPage() {
                 <div>
                   <Image
                     src={"/images/image 22.svg"}
-                    className="w-[50%] sm:w-[38%] md:my-auto mix-blend-screen max-sm:mx-auto max-sm:mt-[-3.6em]  max-sm:h-[10%] md:rotate-0 max-sm:rotate-90 sm:rotate-90 sm:mx-auto sm:my-[-4.3em] md:w-[90%]"
+                    className="w-[50%] sm:w-[38%] md:my-auto mix-blend-screen max-sm:mx-auto max-sm:mt-[-3.6em]  max-sm:h-[10%] md:rotate-0 max-sm:rotate-90 sm:rotate-90 sm:mx-auto md:w-[90%]"
                     height={1}
                     width={1}
                     alt=""
@@ -308,22 +308,22 @@ export default function LandingPage() {
             </div>
 
             <div className="gradient-bg-green-purple h-[100%] w-[100%] rounded-xl p-5 shadow-md">
-              <div className="flex flex-col-reverse gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
+              <div className="flex flex-col-reverse justify-between gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
                 <h2 className="text-[1.6em] font-semibold max-sm:mt-5 md:px-4 md:text-[1.4em] ">
                   <span className="text-[#14FF00]">Fuelling</span> projects and
                   aspirations with every swipe
                 </h2>
-                <div className="flex justify-center gap-[1.5em] md:block mb-3 md:mb-0 ">
+                <div className="flex justify-center gap-[1.5em] md:block mb-3 md:mb-0  mt-4 mb-[1.7em]">
                   <Image
                     src={"/images/arrow.svg"}
-                    className="mix-blend-screen w-[19%] md:w-[80%]"
+                    className="mix-blend-screen w-[22%] md:w-[80%]"
                     height={1}
                     width={1}
                     alt=""
                   />
                   <Image
                     src={"/images/arrow.svg"}
-                    className="block w-[19%] mix-blend-screen md:hidden"
+                    className="block w-[22%] mix-blend-screen md:hidden"
                     height={1}
                     width={1}
                     alt=""
