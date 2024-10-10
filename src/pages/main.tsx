@@ -24,7 +24,7 @@ let comparisonData = [
 const card_group1 = [
   {
     src: "/images/card 1.png",
-    image_classname: "max-sm:mb-[-1.5em] sm:mb-[-2em] md:mb-[-3.4em] cover mx-auto  w-[70%] md:w-[100%] mt-[-2em]",
+    image_classname: "max-sm:mb-[-1.5em] sm:mb-[-2em] md:mb-[-3.4em] cover mx-auto  w-[70%] md:w-[100%] mt-[-2em] 2xl:mb-[-6em]",
     title: `The <span class="text-[#FF5810]">community</span> owned
     card!`,
     caption: `Your Defy Card is by DAOs, for DAOs. Unlike centralized crypto
@@ -131,7 +131,7 @@ export default function LandingPage() {
                 />
 
                 <div className="flex flex-col py-[2.5em]">
-                  <h2 className="poppins  text-[2.2em] font-semibold md:text-[1.85em] lg:text-[2.4em] 2xl:text-[4em]">
+                  <h2 className="poppins  text-[2.2em] font-semibold md:text-[1.85em] lg:text-[2.4em] 2xl:text-[4em] 2xl:leading-[1.31em]">
                   The Card to support your community{" "}
                     <span className="text-[#FFB539]">with every swipe!</span>
                   </h2>
@@ -149,11 +149,11 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="relative z-40 mb-2 mt-[5em]  sm:mt-[12em] grid place-items-center md:mt-[20em] 2xl:mt-[35em]">
+        <section className="relative z-40 mb-2 mt-[5em]  sm:mt-[12em] grid place-items-center md:mt-[20em] 2xl:mt-[24em]">
         <div className="flex flex-wrap justify-center center-align h-[max-content] md:grid gap-[2em]  place-items-center md:grid-cols-[1fr,1fr,1fr] md:max-w-[83%] md:gap-6 max-sm:px-4">
           {card_group1.map((item, index) => (
             <>
-              <div key={index} className={`${item.gradient_classname} center-align flex w-[100%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[fit-content] lg:max-w-[20em] 2xl:max-w-[30em] flex-col justify-center rounded-[1.4em] p-4 max-sm:pb-[2.2em] shadow-lg`}>
+              <div key={index} className={`${item.gradient_classname} center-align flex w-[100%] md:w-[100%] sm:w-[16em] md:h-[100%] sm:h-[30em] h-[fit-content] lg:max-w-[20em] 2xl:max-w-[25em] flex-col justify-center rounded-[1.4em] p-4 max-sm:pb-[2.2em] shadow-lg`}>
               <Image
                 src={item.src}
                 className={item.image_classname}
@@ -170,7 +170,7 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] md:mb-[-38em] lg:mb-[-52em] mt-[2em] grid place-items-center md:mt-[5em] 2xl:mt-[9em]">
+        <section className="mb-[6em] md:mb-[-38em] lg:mb-[-52em] mt-[2em] grid place-items-center md:mt-[5em] 2xl:mt-[6em]">
         <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
           {card_group2.map((item, index) => (
             <>
@@ -272,7 +272,7 @@ export default function LandingPage() {
         <section className="hidden place-items-center  md:grid">
           <div className="grid w-[110%]">
             <div className="z-40 mx-auto grid w-[90%] place-items-center pt-[4em] 2xl:pt-0 text-center">
-              <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold 2xl:text-[4em]">
+              <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold 2xl:text-[4em] 2xl:leading-[1.33em]">
                 Give your community a way to support your cause{" "}
               </h2>
               <p className="mb-[3.4em] mt-[2em] text-[1em] text-[#9AA0A6] md:max-w-[35%]">
