@@ -272,7 +272,7 @@ export default function LandingPage() {
         <section className="hidden place-items-center  md:grid">
           <div className="grid w-[110%]">
             <div className="z-40 mx-auto grid w-[90%] place-items-center 2xl:pt-0 text-center">
-              <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold 2xl:text-[3.5em] 2xl:leading-[1.33em]">
+              <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold 2xl:text-[3.5em] md:leading-[1.36em] 2xl:leading-[1.33em]">
                 Give your community a way to support your cause{" "}
               </h2>
               <p className="mb-[1em] mt-[1em] text-[1em] text-[#9AA0A6] md:max-w-[35%]">
