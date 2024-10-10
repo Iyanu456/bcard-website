@@ -131,7 +131,7 @@ export default function LandingPage() {
                 />
 
                 <div className="flex flex-col py-[2.5em]">
-                  <h2 className="poppins  text-[2.2em] font-semibold md:text-[1.85em] lg:text-[2.4em] 2xl:text-[4em] 2xl:leading-[1.31em]">
+                  <h2 className="poppins  text-[2.2em] font-semibold md:text-[1.85em] lg:text-[2.4em] 2xl:text-[3.5em] 2xl:leading-[1.31em]">
                   The Card to support your community{" "}
                     <span className="text-[#FFB539]">with every swipe!</span>
                   </h2>
@@ -170,7 +170,7 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] md:mb-[-38em] lg:mb-[-52em] mt-[2em] grid place-items-center md:mt-[5em] 2xl:mt-[6em]">
+        <section className="mb-[6em] md:mb-[-36em] lg:mb-[-52em] mt-[2em] grid place-items-center md:mt-[5em]">
         <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
           {card_group2.map((item, index) => (
             <>
@@ -271,11 +271,11 @@ export default function LandingPage() {
         </section>
         <section className="hidden place-items-center  md:grid">
           <div className="grid w-[110%]">
-            <div className="z-40 mx-auto grid w-[90%] place-items-center pt-[4em] 2xl:pt-0 text-center">
-              <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold 2xl:text-[4em] 2xl:leading-[1.33em]">
+            <div className="z-40 mx-auto grid w-[90%] place-items-center 2xl:pt-0 text-center">
+              <h2 className="mb-3 max-w-[62%] text-[3em] font-semibold 2xl:text-[3.5em] 2xl:leading-[1.33em]">
                 Give your community a way to support your cause{" "}
               </h2>
-              <p className="mb-[3.4em] mt-[2em] text-[1em] text-[#9AA0A6] md:max-w-[35%]">
+              <p className="mb-[1em] mt-[1em] text-[1em] text-[#9AA0A6] md:max-w-[35%]">
                 BCard works for every community, no matter how big or small,
                 whether or not you have a token.{" "}
               </p>
@@ -283,18 +283,18 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="relative z-50 mb-[10em] 2xl:max-w-[78%] mx-auto sm:mb-[6em] md:mb-[15em]">
-          <div className="mx-auto mt-[2em] flex h-[fit-content] w-[70%] w-[90%] flex-col-reverse gap-[2em] max-sm:w-[92%] md:mx-auto sm:grid md:h-[5em] sm:grid-cols-[1fr,1fr] md:place-items-center md:gap-[6em]">
-            <div className="gradient-bg-blue-purple h-[100%] w-[100%]  rounded-2xl p-5 shadow-md">
-              <div className="flex  flex-col-reverse gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
-                <h2 className="text-[1.6em] font-semibold max-sm:mt-[-1.8em] md:px-4 md:text-[1.4em] lg:text-[1.5em] 2xl:text-[2em]">
+        <section className="relative z-50 mb-[10em]  2xl:max-w-[78%] mx-auto sm:mb-[6em] md:mb-[15em]">
+          <div className="mx-auto mt-[2em] flex h-[fit-content] w-[70%] w-[90%] flex-col-reverse gap-[2em] max-sm:w-[92%] md:mx-auto sm:grid md:h-[5em] sm:grid-cols-[1fr,1fr] md:place-items-center">
+            <div className="mr-0 ml-auto lg:max-w-[27em] 2xl:max-w-[31em] gradient-bg-blue-purple h-[100%] w-[100%]  rounded-2xl p-5 py-[2em]  shadow-md">
+              <div className="flex md:mb-4  flex-col-reverse gap-2 md:grid md:grid-cols-[74%,26%]">
+                <h2 className="text-[1.6em] font-semibold max-sm:mt-[-1.8em] md:px-4 md:text-[1.4em] lg:text-[1.5em] 2xl:text-[1.8em]">
                   {`Bcard powers your community’s `}
                   {<span className="text-[#08BFFF]">economic</span>} engine
                 </h2>
                 <div>
                   <Image
                     src={"/images/image 22.svg"}
-                    className="w-[50%] sm:w-[38%] md:my-auto mix-blend-screen max-sm:mx-auto max-sm:mt-[-3.6em]  max-sm:h-[10%] md:rotate-0 max-sm:rotate-90 sm:rotate-90 sm:mx-auto md:w-[90%]"
+                    className="w-[50%] sm:w-[38%] md:my-auto mix-blend-screen max-sm:mx-auto max-sm:mt-[-3.6em]  max-sm:h-[10%] md:pt-2 md:rotate-0 max-sm:rotate-90 sm:rotate-90 sm:mx-auto md:w-[74%]"
                     height={1}
                     width={1}
                     alt=""
@@ -307,16 +307,16 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="gradient-bg-green-purple h-[100%] w-[100%] rounded-2xl p-5 shadow-md">
-              <div className="flex flex-col-reverse justify-between gap-2 pt-4 md:grid md:grid-cols-[70%,30%]">
-                <h2 className="text-[1.6em] font-semibold max-sm:mt-5 md:px-4 md:text-[1.4em] lg:text-[1.5em] 2xl:text-[2em]">
+            <div className="ml-0 mr-auto lg:max-w-[27em] 2xl:max-w-[31em] gradient-bg-green-purple h-[100%] w-[100%] rounded-2xl p-5 py-[2em] shadow-md">
+              <div className="md:mb-5 flex flex-col-reverse justify-between gap-2 md:grid md:grid-cols-[72%,28%]">
+                <h2 className="text-[1.6em] font-semibold max-sm:mt-5 md:px-4 md:text-[1.4em] lg:text-[1.5em] 2xl:text-[1.8em]">
                   <span className="text-[#14FF00]">Fuelling</span> projects and
                   aspirations with every swipe
                 </h2>
                 <div className="flex justify-center gap-[1.5em] md:block mb-3 md:mb-0  sm:mt-4 sm:mb-[1.7em]">
                   <Image
                     src={"/images/arrow.svg"}
-                    className="mix-blend-screen w-[22%] md:w-[80%]"
+                    className="mix-blend-screen w-[22%] md:w-[60%] md:mt-[-0.5em]"
                     height={1}
                     width={1}
                     alt=""
@@ -341,8 +341,8 @@ export default function LandingPage() {
           </button>
         </section>
 
-        <section className="mb-[5em] mt-[5em] grid place-items-center md:mt-[25em] 2xl:mt-[28em]">
-          <h3 className="tracking-[0.7em] 2xl:text-[1.5em]">OUR PARTNERS</h3>
+        <section className="mb-[5em] mt-[5em] grid place-items-center md:mt-[20em]">
+          <h3 className="tracking-[0.7em] 2xl:text-[1.24em]">OUR PARTNERS</h3>
           <div className="center-align mt-[4em] 2xl:mt-[6em] flex w-[50%] md:justify-between gap-[4em] max-sm:flex-col justify-center">
             <Image
               src={"/images/image 15.svg"}
@@ -369,47 +369,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="mb-[5em] mt-[10em]  grid place-items-center">
-          <h3 className="mb-[1.5em] text-center text-[1.8em] 2xl:text-[2.5em] font-semibold ">
-            Contact us
-          </h3>
-          <div className="center-align flex w-[90%] flex-col justify-center gap-4 md:w-[65%]">
-            <div className="flex w-[100%] gap-4 max-sm:w-[200%] max-sm:flex-col">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-[50%] rounded-lg border border-gray-600 bg-[#1C1C1C] p-2 pl-4 text-white placeholder-gray-400"
-              />
-              <input
-                type="text"
-                placeholder="TheDaoist@protonmail.com"
-                className="w-[50%] rounded-lg border border-gray-600 bg-[#1C1C1C] p-2 pl-4 text-white placeholder-gray-400"
-              />
-            </div>
-            <div className="flex w-[100%] gap-4 max-sm:w-[200%] max-sm:flex-col">
-              <input
-                type="text"
-                placeholder="Discord Handle"
-                className="w-[50%] rounded-lg border border-gray-600 bg-[#1C1C1C] p-2 pl-4 text-white placeholder-gray-400"
-              />
-              <input
-                type="text"
-                placeholder="Organization"
-                className="w-[50%] rounded-lg border border-gray-600 bg-[#1C1C1C] p-2 pl-4 text-white placeholder-gray-400"
-              />
-            </div>
-            <div>
-              <textarea
-                placeholder="Write a message for us!"
-                className="h-60 w-[100%] rounded-lg border border-gray-600 bg-[#1C1C1C] p-2 pl-4 text-white placeholder-gray-400"
-              ></textarea>
-            </div>
-          </div>
-          <Link href="https://support.getbcard.io/" className="mx-auto mt-[2em] rounded-md bg-[#FF005C] px-[2.6em] py-[0.7em]">
-            {" "}
-            Contact us
-          </Link>
-        </section>
+        
       </div>
       <Footer />
     </>
