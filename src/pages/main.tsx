@@ -170,11 +170,11 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] md:mb-[-36em] lg:mb-[-52em] mt-[2em] grid place-items-center md:mt-[5em]">
-        <div className="flex h-[max-content] flex-col gap-[2em] p-5 md:grid md:w-[78%] md:grid-cols-[1fr,1fr,1fr]  md:gap-6">
+        <section className="mb-[6em] md:mb-[-36em] lg:mb-[-52em] 2xl:mb-[-70em] mt-[2em] grid place-items-center md:mt-[5em]">
+        <div className="flex h-[max-content] mx-auto flex-col gap-[2em] p-5 md:grid md:max-w-[83%] md:grid-cols-[1fr,1fr,1fr]">
           {card_group2.map((item, index) => (
             <>
-              <div key={index} className=" center-align grid h-[100%] w-[100%] grid-rows-[9.7em,auto] justify-center rounded-[1.4em] p-4 shadow-lg">
+              <div key={index} className=" center-align grid h-[100%] w-[100%] grid-rows-[9.7em,auto] justify-center rounded-[1.4em] p-4 shadow-lg 2xl:max-w-[25em]">
               <Image
                 src={item.src}
                 className=" mx-auto max-h-[8.2em] max-w-[8.2em]"
@@ -194,7 +194,7 @@ export default function LandingPage() {
 
         
 
-        <section className="z-[100] mb-4 hidden place-items-center md:mt-[-17.5em] lg:mt-[-20em] 2xl:mt-[-68em] md:grid md:mb-[-14em] 2xl:mb-[-20em] ">
+        <section className="z-[100] mb-4 hidden place-items-center md:mt-[-17.5em] lg:mt-[-25em] 2xl:mt-[-69em] md:grid md:mb-[-14em] 2xl:mb-[-20em] ">
           <div className="relative grid w-[110%]">
             <div className="">
               <Image
@@ -341,9 +341,9 @@ export default function LandingPage() {
           </button>
         </section>
 
-        <section className="mb-[5em] mt-[5em] grid place-items-center md:mt-[20em]">
+        <section className="mb-[5em] mt-[5em] grid place-items-center md:mt-[19em]">
           <h3 className="tracking-[0.7em] 2xl:text-[1.24em]">OUR PARTNERS</h3>
-          <div className="center-align mt-[4em] 2xl:mt-[6em] flex w-[50%] md:justify-between gap-[4em] max-sm:flex-col justify-center">
+          <div className="center-align mt-[4em] flex w-[50%] md:justify-between gap-[4em] max-sm:flex-col justify-center">
             <Image
               src={"/images/image 15.svg"}
               className="mx-auto w-[6em] 2xl:w-[9em]"
