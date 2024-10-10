@@ -346,14 +346,14 @@ export default function LandingPage() {
           <div className="center-align mt-[4em] flex w-[50%] md:justify-between gap-[4em] max-sm:flex-col justify-center">
             <Image
               src={"/images/image 15.svg"}
-              className="mx-auto w-[6em] 2xl:w-[9em]"
+              className="mx-auto w-[6em] 2xl:w-[8em]"
               height={1}
               width={1}
               alt=""
             />
             <Image
               src={"/images/DAO Logo.svg"}
-              className="mx-auto w-[6em] 2xl:w-[9em]"
+              className="mx-auto w-[6em] 2xl:w-[8em]"
               height={1}
               width={1}
               alt=""
@@ -361,7 +361,7 @@ export default function LandingPage() {
 
             <Image
               src={"/images/image 16.svg"}
-              className="mx-auto w-[6em] 2xl:w-[9em]"
+              className="mx-auto w-[6em] 2xl:w-[8em]"
               height={1}
               width={1}
               alt=""
