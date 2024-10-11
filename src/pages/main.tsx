@@ -95,7 +95,7 @@ export default function LandingPage() {
           <div className="relative grid h-[100%] w-[100%]">
             <Image
               src={"/curves/hero curve 1.svg"}
-              className="cover absolute left-0 right-0 z-20 mt-[-4.4em] w-[100vw] md:mt-[-9em] lg:mt-[-13.5em] 2xl:mt-[-17.5em] "
+              className="cover absolute left-0 right-0 z-20 mt-[-4.4em] w-[100vw] md:mt-[-11em] lg:mt-[-13.5em] 2xl:mt-[-17.5em] "
               height={200}
               width={1250}
               alt=""
@@ -103,14 +103,14 @@ export default function LandingPage() {
 
             <Image
               src={"/curves/hero curve 2.svg"}
-              className="cover absolute left-0 right-0 z-10 mt-[15em] w-[100vw] md:mt-[-7.5em] lg:mt-[-13em] 2xl:mt-[-19.5em] "
+              className="cover absolute left-0 right-0 z-10 mt-[15em] w-[100vw] md:mt-[-11em] lg:mt-[-13em] 2xl:mt-[-19.5em] "
               height={500}
               width={1200}
               alt=""
             />
 
-            <div className="z-50 lg:mt-[2em] 2xl:mt-[5em] md:ml-[-3em]">
-              <div className=" flex flex-col-reverse px-[2em] text-center md:grid md:grid-cols-[1fr,1fr] md:px-[3.5em] md:text-left md:gap-[2.8em]">
+            <div className="z-50 lg:mt-[2em] 2xl:mt-[5em] md:ml-[-3.5em]">
+              <div className=" flex flex-col-reverse px-[2em] text-center md:grid md:grid-cols-[1fr,1fr] md:px-[3.5em] md:text-left md:gap-[2.8em] md:mt-[-2em]">
                 <Link href="https://app.getbcard.io/" className="mx-auto mt-6 block rounded-md bg-[#FF005C] px-[2.4em] py-[0.7em] md:hidden">
                   {" "}
                   Sign up Now
@@ -131,7 +131,7 @@ export default function LandingPage() {
                 />
 
                 <div className="flex flex-col py-[2.5em] md:pt-[1em] md:my-auto">
-                  <h2 className="poppins  text-[2.2em] font-semibold md:text-[1.5em] lg:text-[2.4em] 2xl:text-[3.5em] 2xl:leading-[1.31em] md:leading-[1.32em]">
+                  <h2 className="poppins  text-[2.2em] font-semibold md:text-[1.8em] lg:text-[2.3em] 2xl:text-[3.5em] 2xl:leading-[1.31em] md:leading-[1.32em]">
                   The Card to support your community{" "}
                     <span className="text-[#FFB539]">with every swipe!</span>
                   </h2>
@@ -170,7 +170,7 @@ export default function LandingPage() {
         </div>
         </section>
 
-        <section className="mb-[6em] md:mb-[-36em] max:md:mb-[-16em] lg:mb-[-52em] 2xl:mb-[-70em] mt-[2em] grid place-items-center md:mt-[5em]">
+        <section className="mb-[6em]  lg:mb-[-52em] 2xl:mb-[-70em] mt-[2em] grid place-items-center md:mt-[5em]">
         <div className="flex h-[max-content] mx-auto flex-col gap-[2em] p-5 md:grid md:max-w-[83%] md:grid-cols-[1fr,1fr,1fr]">
           {card_group2.map((item, index) => (
             <>
@@ -194,12 +194,12 @@ export default function LandingPage() {
 
         
 
-        <section className="z-[100] mb-4 hidden place-items-center max-md:mt-[-35em] lg:mt-[-25em] 2xl:mt-[-69em] md:grid md:mb-[-10em] 2xl:mb-[-20em] ">
+        <section className="z-[100] mb-4 hidden place-items-center md:mt-[-35em] lg:mt-[-25em] 2xl:mt-[-69em] md:grid md:mb-[-10em] 2xl:mb-[-20em] ">
           <div className="relative grid w-[110%]">
             <div className="">
               <Image
                 src={"/curves/curve 7.svg"}
-                className="w-[100%]"
+                className="w-[100%] md:mt-[5em]"
                 height={1}
                 width={1}
                 alt=""
